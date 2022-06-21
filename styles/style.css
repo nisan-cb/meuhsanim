@@ -16,6 +16,10 @@
     font-family: 'Assistant', sans-serif;
 }
 
+body {
+    padding: 0 20px;
+}
+
 nav {
     padding: 2px 10px;
     position: relative;
@@ -31,7 +35,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    
+
 
 }
 
@@ -57,14 +61,17 @@ header {
 }
 
 header {
-    position: absolute;
-    top: 50%;
-    left: 0;
+    position: relative;
+    /* top: 50%; */
+    /* left: 0; */
     background-color: red;
-    transform: translate(0, -50%);
-    z-index: 999;
+    /* transform: translate(0, -50%); */
+    /* z-index: 999; */
     font-family: MyWebFont;
     padding-right: 8px;
+    text-align: center;
+    background-image: url('../images/board1.png');
+
 }
 
 #search-container {
@@ -148,7 +155,16 @@ section button {
 
 #section3 {
     background-color: aqua;
+    position: relative;
 }
+
+#section3 img {
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    left: 20px;
+}
+
 
 footer {
     min-height: 200px;
