@@ -31,8 +31,9 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    background-color: #F8D807;
 
-   }
+}
 
 ul li {
     margin: 8px 0px 8px 20px;
@@ -62,7 +63,7 @@ header {
     background-color: red;
     transform: translate(0, -50%);
     z-index: 999;
-    font-family:MyWebFont;
+    font-family: MyWebFont;
     padding-right: 8px;
 }
 
@@ -158,14 +159,14 @@ footer {
     padding: 30px 20px;
 }
 
- h5 p{
-color:right;
-font-family:MyWebFont;
-color:white;
+h5 p {
+    color: right;
+    font-family: MyWebFont;
+    color: white;
 }
 
 #box {
-    color:white;
+    color: white;
     Font-family: Assistant;
 }
 
