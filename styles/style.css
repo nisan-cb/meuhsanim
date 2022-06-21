@@ -128,13 +128,15 @@ footer {
     padding: 30px 20px;
 }
 
-p h5{
+ h5 p{
 color:right;
 font-family:MyWebFont;
+color:white;
 }
 
 #box {
-    color:right;
+    color:white;
+    Font-family: Assistant;
 }
 
 footer .box {
