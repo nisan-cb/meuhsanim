@@ -16,26 +16,38 @@
     font-family: 'Assistant', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    font-family: mywebfont;
-}
-
-header {
-    min-height: 200px;
-    padding: 0 20px;
-    /* background-color: blue; */
-}
-
-header nav {
+nav {
     padding: 2px 10px;
-    /* display: flex; */
     position: relative;
     /* background-color: blueviolet; */
        font-family: 'MyWebFont';
 }
 
-header #top {
+nav ul {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+   }
+
+ul li {
+    margin: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    /* background-color: blue; */
+}
+
+a {
+    text-decoration: none;
+    font-family: mywebfont;
+}
+
+
+
+header {
+    min-height: 100px;
+    padding: 0 20px;
+    /* background-color: blue; */
     position: relative;
 }
 
@@ -47,24 +59,6 @@ header  {
     transform: translate(0, -50%);
     z-index: 999;
     font-family:MyWebFont;
-}
-
- nav ul {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-   
-}
-
-ul li {
-    margin: 8px 0px 8px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    /* background-color: blue; */
-}
-
-header div {
     padding-right: 8px;
 }
 
@@ -134,6 +128,15 @@ footer {
     padding: 30px 20px;
 }
 
+p h5{
+color:right;
+font-family:MyWebFont;
+}
+
+#box {
+    color:right;
+}
+
 footer .box {
     width: 50%;
     display: flex;
@@ -142,6 +145,8 @@ footer .box {
     flex-direction: column;
     /* border: 1px solid black; */
 }
+
+
 
 footer .box:nth-child(1) {
     /* justify-content: start; */
