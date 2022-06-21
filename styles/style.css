@@ -16,30 +16,14 @@
     font-family: 'Assistant', sans-serif;
 }
 
-<<<<<<< HEAD
 nav {
     padding: 2px 10px;
-=======
-a {
-    text-decoration: none;
-    font-family: mywebfont;
-}
-
-header {
-    min-height: 200px;
-    padding: 0 20px;
-    /* background-color: blue; */
-}
-
-nav {
-    padding: 2px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
->>>>>>> 41524e49ee752e4b9b6408e9cb6e84c41ee8fa9c
     position: relative;
     /* background-color: blueviolet; */
     font-family: 'MyWebFont';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -47,6 +31,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+
    }
 
 ul li {
@@ -77,29 +62,7 @@ header {
     background-color: red;
     transform: translate(0, -50%);
     z-index: 999;
-<<<<<<< HEAD
     font-family:MyWebFont;
-=======
-    font-family: MyWebFont;
-}
-
-nav ul {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-
-}
-
-ul li {
-    margin: 8px 0px 8px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    /* background-color: blue; */
-}
-
-header div {
->>>>>>> 41524e49ee752e4b9b6408e9cb6e84c41ee8fa9c
     padding-right: 8px;
 }
 
@@ -170,7 +133,8 @@ section {
 
 
 section p {
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    margin-top: 10px;
 }
 
 section button {
