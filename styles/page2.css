@@ -14,8 +14,6 @@ body {
     padding: 0 100px;
 }
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
 
 
@@ -88,20 +86,21 @@ a {
 
 
 header {
-       font-family: MyWebFont;
-    text-align: center;
-    background-image: url('../images/kitchen.jpeg'); 
+     text-align: center;
+    background-image: url('../images/kitchen2.jpg'); 
     background-size:100% 100%;
      width: 100%;
-     height: 23vh;
+     height: 250px;
      margin-bottom: 00px;
      
 }
 
 header h1 {
     width: 100%;
-    font-family:'MyWebFont', 20px ;
+    font-family:'MyWebFont',
+    font-size: 60px ;
     color: black;
+    margin top:10px ;
 }
 
 
@@ -110,28 +109,28 @@ header h1 {
     display: flex;
     flex-direction: row;
     list-style: none;
-    
-}
+    margin: 0 0 px;
+    width: 100%;
+    margin-left:0px ;
+    position: relative;
+    }
 
 ul.foodslist > li {
     font-family:'MyWebFont', 20px ;
     color: black;
-    background-color: aqua;
+    background-color: aqua; height: 80px; width: 80px ;
     border-style: solid;
     padding: 5px   5px;
-    height: 80px;
-    width: 800px;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
+      position: relative;
+     margin: 5 5 px;
+     width: 100% ;
 }
 
 ul.fruits {
-    /* background-color: red; */
-    display: flex;
+      display: flex;
     flex-direction:column ;
     list-style: none;
-    margin-top: 0ch;
+    margin-top: 0px;
 }
 
 ul.fruits > li {
@@ -139,16 +138,23 @@ ul.fruits > li {
     color: black;
     background-color: aqua;
     border-style: solid;
-    padding: 5px   5px;
+    padding: 5px 5px;
     height: 80px;
-    width: 800px;
     text-align: center;
     display: flex;
     flex-direction:column ;
-}
+    height: 80px;
+    width: 80px;
+    display: none;
+    }
+
+    ul.foodlist ul li > hover ul.fruits{
+        display: block;
+           }
 
 img#kitchen2 {
 margin-top: 0ch;
 height: 200px;
+position: relative;
 
 }
