@@ -62,7 +62,7 @@ a {
     display: flex;
     max-height: 30px;
     justify-content: left;
-    margin left: 0 px ;
+    margin-left: 0 px;
 }
 
 
@@ -89,42 +89,43 @@ a {
 
 
 header {
-       /* top: 50%; */
+    /* top: 50%; */
     /* left: 0; */
     /* transform: translate(0, -50%); */
     /* z-index: 999; */
     font-family: MyWebFont;
     text-align: center;
-    background-image: url('../images/BOX1.png'); 
-    background-size:100% 100%;
-     /* height: 130px; */
-     /* width: 1800px ; */
-     width: 100%;
-     height: 23vh;
-     margin-bottom: 00px;
-     
+    background-image: url('../images/BOX1.png');
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin-bottom: 00px;
+    padding: 20px 0;
+
 }
 
 header>h1 {
     width: 100%;
 }
 
-     h1 p {
-        font-family: MyWebFont;
-        color: black;
-    }
-    
-    
-    
-    #p1   {
-    font-size:60px;
-    }
-    
-    
-    #p2{
-        color:blue;
-    
-    }
+h1 p {
+    font-family: MyWebFont;
+    color: black;
+}
+
+
+
+#p1 {
+    font-size: 60px;
+}
+
+
+#p2 {
+    color: blue;
+
+}
 
 
 
@@ -144,9 +145,9 @@ header div p {
     padding-right: 8px;
 }
 
-header button {
+/* header button {
     margin: 60px 0;
-}
+} */
 
 .btn {
     /* margin: 60px 0px; */
@@ -161,36 +162,40 @@ header button {
 section {
     min-height: 200px;
     padding-right: 18px;
-    padding-left:18px ;
+    padding-left: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: flex-start ;
-    column-gap: 150px;
+    justify-content: space-between;
 }
 
+section img {
+    max-width: 40%;
+    max-height: 200px;
+    /* height: 100px; */
+}
 
-#section1 img, #section2 img, #section3 img
-{
+section {
     position: flex;
- width: 450px;
-height: 300px;
-margin-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 450px; */
+    /* height: 300px; */
+    /* margin-left: 10px; */
 }
 
-#section3 img
-{
+/* #section3 img {
     margin-top: -50px;
-}
+} */
 
 
 section p {
-        /* margin: 10px 0; */
-        margin-top: 10px;
-        font-family: arimo;
-        font-size:  20px;
-        }
-    
+    /* margin: 10px 0; */
+    margin-top: 10px;
+    font-family: arimo;
+    font-size: 20px;
+}
+
 
 
 #section1 {
@@ -228,9 +233,9 @@ h5 p {
 }
 
 
- footer a {
-color: white;
-font-family:arimo;
+footer a {
+    color: white;
+    font-family: arimo;
 }
 
 
