@@ -1,11 +1,154 @@
+
+
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Assistant', sans-serif;
 }
+
 
 body {
-    background-color: brown;
+    direction: rtl ;
+    padding: 0 100px;
 }
 
-ד
 
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/GveretLevinAlefAlefAlefRegular.ttf');
+
+}
+
+
+nav {
+    padding: 2px 10px;
+    position: relative;
+    /* background-color: blueviolet; */
+    font-family: 'MyWebFont';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+ul li {
+    margin: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    /* background-color: blue; */
+}
+
+a {
+    text-decoration: none;
+    font-family: mywebfont;
+}
+
+
+#search-container {
+    /* background-color: #F8D807; */
+    display: flex;
+    max-height: 30px;
+    justify-content: left;
+    margin left: 0 px ;
+}
+
+
+
+
+#search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+#search-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header {
+       font-family: MyWebFont;
+    text-align: center;
+    background-image: url('../images/kitchen.jpeg'); 
+    background-size:100% 100%;
+     width: 100%;
+     height: 23vh;
+     margin-bottom: 00px;
+     
+}
+
+header h1 {
+    width: 100%;
+    font-family:'MyWebFont', 20px ;
+    color: black;
+}
+
+
+ ul.foodslist {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+ul.foodslist > li {
+    font-family:'MyWebFont', 20px ;
+    color: black;
+    background-color: aqua;
+    border-style: solid;
+    padding: 5px   5px;
+    height: 80px;
+    width: 800px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.fruits {
+    /* background-color: red; */
+    display: flex;
+    flex-direction:column ;
+    list-style: none;
+    margin-top: 0ch;
+}
+
+ul.fruits > li {
+    font-family:'MyWebFont', 20px ;
+    color: black;
+    background-color: aqua;
+    border-style: solid;
+    padding: 5px   5px;
+    height: 80px;
+    width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction:column ;
+}
+
+img#kitchen2 {
+margin-top: 0ch;
+height: 200px;
+
+}
