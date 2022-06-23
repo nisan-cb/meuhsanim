@@ -11,6 +11,7 @@ body {
     direction: rtl;
     padding: 0 100px;
     min-height: 100vh;
+    display: 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
@@ -105,9 +106,11 @@ header h1 {
 /*main style  */
 
 main {
-    background-color: aqua;
-    height: 100%;
+       height: 100%;
     padding-bottom: 100px;
+    background-image:url('../images/closet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul.foodslist {
@@ -131,7 +134,7 @@ ul.foodslist {
     font-size: 0.9rem;
     /* padding-left: 15px; */
     /* background-color: blueviolet; */
-    border: 1px solid black;
+    border: 1px solid white;
     /* height: fit-content; */
     display: flex;
     justify-content: center;
@@ -139,7 +142,20 @@ ul.foodslist {
     padding: 3px 5px;
     position: relative;
     cursor: pointer;
+    background-image:url('../images/WOOD.png');
+    color: white ;
+    font-family:'MyWebFont' ;
+    font-size: 20px;
 }
+
+ul.foodslist li span
+{
+    font-family:'MyWebFont' ;
+    color: white
+} 
+
+
+
 
 .foodslist li:hover {
     background-color: chocolate;
@@ -173,7 +189,15 @@ section {
 
 #explain-box {
     /* padding: 0; */
-    text-align: center;
+    text-align: center;  
+    Position: flex;
+justify-content: center;
+}
+
+ Instructions #explain-box 
+{
+
+
 }
 
 #explain-box p {
@@ -182,6 +206,9 @@ section {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 100px;
+    color:aqua;
+    font-size: 40px;
+    font-family:'MyWebFont'; 
 }
 
 #explain-box img {

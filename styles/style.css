@@ -16,8 +16,9 @@
     font-family: 'Assistant', sans-serif;
 }
 
+
 body {
-    padding: 0 100px;
+    padding: 0 120px;
 }
 
 
@@ -30,6 +31,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 25PX;
 }
 
 
@@ -40,6 +42,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-family: 'MyWebFont';
 
 
 }
@@ -54,6 +57,7 @@ ul li {
 a {
     text-decoration: none;
     font-family: mywebfont;
+    color: black;
 }
 
 
@@ -95,14 +99,16 @@ header {
     /* z-index: 999; */
     font-family: MyWebFont;
     text-align: center;
-    background-image: url('../images/BOX1.png');
+    background-image: url('../images/BOX3.png');
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
     background-repeat: no-repeat;
     height: fit-content;
     margin-bottom: 00px;
-    padding: 20px 0;
+    padding: 20px 0 ;
+    margin-top: -2OX;
+
 
 }
 
@@ -112,18 +118,19 @@ header>h1 {
 
 h1 p {
     font-family: MyWebFont;
-    color: black;
+    
 }
 
 
 
 #p1 {
     font-size: 60px;
+    color:#744D3C;
 }
 
 
 #p2 {
-    color: blue;
+    color:#BA8E55 ;
 
 }
 
@@ -157,6 +164,11 @@ header div p {
     background-color: white;
     cursor: pointer;
     font-family: MyWebFont;
+    
+}
+a button.btn
+{
+color:black;
 }
 
 section {
@@ -170,9 +182,9 @@ section {
 }
 
 section img {
-    max-width: 40%;
-    max-height: 200px;
-    /* height: 100px; */
+    width: 50%;
+    height: 350px;    
+        /* height: 100px; */
 }
 
 section {
@@ -200,6 +212,7 @@ section p {
 
 #section1 {
     background-color: rgb(248, 206, 213);
+    
 }
 
 
@@ -219,22 +232,41 @@ section button {
 
 footer {
     min-height: 200px;
-    background-color: #5E616D;
+    background-image:src= "./images/WOOD.png" ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 30px 20px;
 }
 
-h5 p {
+h5  {
     color: right;
     font-family: MyWebFont;
     color: white;
+    margin-bottom: 20px ;
+    font-size: 20px;
+}
+
+h6 {
+    color: right;
+    font-family: MyWebFont;
+    color: white;
+    margin-top: -12px ;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 
+
+footer {
+background-image:url('../images/WOOD.png'); 
+background-size: cover;
+  }
+
+
+
 footer a {
-    color: white;
+    color:white ;
     font-family: arimo;
 }
 
@@ -252,8 +284,8 @@ footer .box {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid black; */
-}
+    /* border: 1px solid black; */ 
+   }
 
 
 
@@ -273,4 +305,17 @@ footer .box:nth-child(2) {
 footer .box:nth-child(2) img {
     width: 40px;
     margin-top: 10px;
+  
+}
+
+h7 {
+font-family:MyWebFont;
+color: white;
+font-size:20px;
+}
+
+#imgfooter{
+    height: 80px;
+    width: 80px;
+
 }
