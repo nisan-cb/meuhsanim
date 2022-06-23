@@ -196,8 +196,11 @@ justify-content: center;
 
  Instructions #explain-box 
 {
+margin: 40px 40px;
+}
 
-
+Instructions #explain-box img{
+    size: 25% ;
 }
 
 #explain-box p {
