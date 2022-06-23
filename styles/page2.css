@@ -11,7 +11,7 @@ body {
     direction: rtl;
     padding: 0 100px;
     min-height: 100vh;
-    display: 
+    /* display: */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
@@ -106,9 +106,8 @@ header h1 {
 /*main style  */
 
 main {
-       height: 100%;
+    height: 100%;
     padding-bottom: 100px;
-    background-image:url('../images/closet.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -126,6 +125,7 @@ ul.foodslist {
     /* margin-left: 0px; */
     position: relative;
     /* border: 1px solid black; */
+    z-index: 1;
 }
 
 .foodslist li {
@@ -142,17 +142,16 @@ ul.foodslist {
     padding: 3px 5px;
     position: relative;
     cursor: pointer;
-    background-image:url('../images/WOOD.png');
-    color: white ;
-    font-family:'MyWebFont' ;
+    background-image: url('../images/WOOD.png');
+    color: white;
+    font-family: 'MyWebFont';
     font-size: 20px;
 }
 
-ul.foodslist li span
-{
-    font-family:'MyWebFont' ;
+ul.foodslist li span {
+    font-family: 'MyWebFont';
     color: white
-} 
+}
 
 
 
@@ -188,19 +187,29 @@ section {
 /* explain box style */
 
 #explain-box {
-    /* padding: 0; */
-    text-align: center;  
+    padding: 100px 0;
+    text-align: center;
     Position: flex;
-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 300px; */
+    height: fit-content;
+    flex-direction: column;
+    background-image: url('../images/closet.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: calc(100% + 300px); */
+    position: relative;
+
 }
 
- Instructions #explain-box 
-{
-margin: 40px 40px;
-}
 
-Instructions #explain-box img{
-    size: 25% ;
+#explain-box img {
+    /* size: 50px; */
+    height: 100px;
+    /* display: none; */
+    /* margin-top: 50px; */
 }
 
 #explain-box p {
@@ -208,10 +217,10 @@ Instructions #explain-box img{
     padding: 15px;
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 100px;
-    color:aqua;
+    margin-bottom: 50px;
+    color: aqua;
     font-size: 40px;
-    font-family:'MyWebFont'; 
+    font-family: 'MyWebFont';
 }
 
 #explain-box img {
@@ -226,13 +235,15 @@ Instructions #explain-box img{
     /* min-height: 250px; */
     height: fit-content;
     border: 1px solid black;
-    background-color: blueviolet;
-    margin-top: 50px;
+    background-color: blue;
+    /* margin-top: 50px; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* height: 100%; */
     position: relative;
 }
 
 #imgs-bar {
-    position: absolute;
     width: 100%;
     height: 50px;
     background-color: coral;
@@ -248,7 +259,23 @@ Instructions #explain-box img{
     border: 1px solid black;
     margin: 0 8px;
     padding: 0;
+    /* min-width: 16%; */
+    cursor: pointer;
+    width: 16%;
+
+}
+
+#slidding-window #left {
+    background-color: blue;
     min-width: 50px;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    cursor: pointer;
+}
+
+#slidding-window #right {
+    background-color: blue;
+    min-width: 50px;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
     cursor: pointer;
 }
 
