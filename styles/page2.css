@@ -50,9 +50,10 @@ nav ul li {
     /* background-color: blue; */
 }
 
-a {
+ a {
     text-decoration: none;
     font-family: mywebfont;
+    color: black;
 }
 
 
@@ -63,8 +64,6 @@ a {
     justify-content: left;
     margin-left: 0 px;
 }
-
-
 
 
 #search-btn {
@@ -87,20 +86,25 @@ a {
 
 header {
     text-align: center;
-    background-image: url('../images/kitchen2.jpg');
+    background-image: url('../images/backgground2.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 250px;
+    height: 300px;
     margin-bottom: 00px;
+    position: relative;
 
 }
 
 header h1 {
     width: 100%;
     font-family: 'MyWebFont';
-    font-size: 60px;
-    color: black;
+    font-size: 90px;
+    color: brown;
     margin-top: 10px;
+    position: absolute;
+    margin-top: 55PX;
+      
+
 }
 
 /*main style  */
@@ -126,6 +130,7 @@ ul.foodslist {
     position: relative;
     /* border: 1px solid black; */
     z-index: 1;
+    
 }
 
 .foodslist li {
@@ -134,26 +139,27 @@ ul.foodslist {
     font-size: 0.9rem;
     /* padding-left: 15px; */
     /* background-color: blueviolet; */
-    border: 1px solid white;
-    /* height: fit-content; */
+       /* height: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px 5px;
     position: relative;
     cursor: pointer;
-    background-image: url('../images/WOOD.png');
-    color: white;
+    background-image: url('../images/woodendrawer.png');
+    color: black;
     font-family: 'MyWebFont';
-    font-size: 20px;
+    font-size: 30px;
+    height:70px ;
+    background-size: cover;
+    background-size: 100% 100%;
 }
 
 ul.foodslist li span {
     font-family: 'MyWebFont';
-    color: white
+    color: black;
+ 
 }
-
-
 
 
 .foodslist li:hover {
@@ -182,12 +188,17 @@ ul li:hover ul {
 /* sections style */
 section {
     display: none;
-}
+} 
+
+
+
+
+
 
 /* explain box style */
 
 #explain-box {
-    padding: 100px 0;
+    padding: 0px ;
     text-align: center;
     Position: flex;
     justify-content: center;
@@ -201,6 +212,7 @@ section {
     background-repeat: no-repeat;
     /* height: calc(100% + 300px); */
     position: relative;
+    height: 350px;
 
 }
 
@@ -214,11 +226,11 @@ section {
 
 #explain-box p {
     border-top: 1px solid black;
-    padding: 15px;
+    padding: 7px;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 50px;
-    color: aqua;
+    color:brown; 
     font-size: 40px;
     font-family: 'MyWebFont';
 }
@@ -234,25 +246,25 @@ section {
     width: 100%;
     /* min-height: 250px; */
     height: fit-content;
-    border: 1px solid black;
-    background-color: blue;
-    /* margin-top: 50px; */
+         /* margin-top: 50px; */
     /* position: absolute; */
     /* top: 0; */
     /* height: 100%; */
     position: relative;
+    margin-top: 20px;
 }
 
 #imgs-bar {
     width: 100%;
-    height: 50px;
-    background-color: coral;
-    top: 0;
+    height: 70px;
+    background-image: url('../images/fruits.jpg'); 
+     background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0;
-    margin: 0;
+    margin-top: 0px;
+    border: 1px solid black;
 }
 
 #imgs-bar .box {
@@ -261,26 +273,66 @@ section {
     padding: 0;
     /* min-width: 16%; */
     cursor: pointer;
-    width: 16%;
+    width: fit-content;
+    position: flex;
+      background-color: white;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding:2px 2px;
+    height: fit-content;
+    padding: 10px 5px;
+    justify-content: center;
+            }
+
+     #imgs-bar  a{
+     font-family: MyWebFont;
+     font-size: 30px ;
+     margin: 0 auto;
+                     }
+     
+
+
+#imgs-bar span{
+color: black;
+size: 40px;
 
 }
-
-#slidding-window #left {
-    background-color: blue;
-    min-width: 50px;
+#slidding-window #left  , #slidding-window #right {
+    background-color: white;
+    width: 70px;
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
     cursor: pointer;
+    border-style: 10PX dotted ; 
+     position: flex;
+     background-color:black ;
+     align-items: center;
+    
 }
 
-#slidding-window #right {
-    background-color: blue;
-    min-width: 50px;
-    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-    cursor: pointer;
+#slidding-window #right
+
+{
+   clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
 }
 
-.clicked {
-    background-color: yellowgreen;
+#slidding-window #right a
+{
+color: white;
+font-family: arimo ;
+font-size: 14px;
+}
+
+#slidding-window #left a{
+    color: white;
+    font-family: arimo ;
+    font-size: 14px;
+   }
+
+ 
+ 
+   #imgs-bar.box :hover{
+    background-color: yellow;
 }
 
 #section1 img {
@@ -289,4 +341,36 @@ section {
 
 #section2 img {
     width: 100%;
+}
+
+section h1{
+size: 20px;
+font-family: 'MyWebFont';
+background-color: yellow;  border: solid black  1px;
+position: flex;
+justify-content: center;
+}
+
+section h1 p {
+    margin-right: 45%;
+       }
+
+section h2 , section h3, section h4 , section h5, section h6
+ {
+text-decoration: underline; 
+text-decoration: overline; width: 100%;
+font-size: 20px;
+border-top: 1px color black ;
+}
+
+section img {
+width: 10%;
+height:  10%;
+position: flex;
+justify-content: start;
+}
+
+.fruits li a
+{
+color: white;
 }
