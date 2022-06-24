@@ -1,15 +1,27 @@
 console.log("hello from script")
 
+
+
 let array = [];
 let currentSection = -1;
+
+let explainBox;
+let sliddingWindowEl;
+
+
+window.addEventListener('load', () => {
+    init();
+    explainBox = document.getElementById("explain-box");  // get explain box element
+    sliddingWindowEl = document.getElementById("slidding-window");
+
+})
 
 function init() {
     array = document.getElementsByClassName('slide')    // get all html sections
     const slidesEl = document.getElementsByClassName('box');    // get all fruits slides
     // const sliddingContent = document.getElementById('slide-contant') //
     const fruitsLi = document.getElementById('fruits-li'); // fruits li element
-    const explainBox = document.getElementById("explain-box");  // get explain box element
-    const sliddingWindowEl = document.getElementById("slidding-window");
+    // const closeSliddingWindow = document.getElementById("close");
 
     const left = document.getElementById('left')
     const right = document.getElementById('right')
@@ -39,6 +51,17 @@ function init() {
     })
 
     function updateSection() {
+        const slideTitle = document.getElementById('slide-title');
+        slideTitle.innerHTML = "";
+        const span = document.createElement('span');
+        const p = document.createElement('p');
+
+        p.textContent = `אחסון ${array[currentSection].title}`;
+        span.textContent = (currentSection + 1).toString() + '/' + array.length.toString();
+        slideTitle.append(span, p);
+        console.log(array[currentSection]);
+
+
         for (let j = 0; j < slidesEl.length; j++) {
             slidesEl[j].classList.remove('clicked');
             array[j].style.display = 'none';
@@ -46,12 +69,17 @@ function init() {
         slidesEl[currentSection].classList.add('clicked');
         array[currentSection].style.display = 'block';
     }
+
+
+
 }
 
 
-window.addEventListener('load', () => {
-    init();
-})
+
+function closeSliddingWindow() {
+    sliddingWindowEl.style.display = 'none';
+    explainBox.style.display = 'block';
+}
 
 
 
