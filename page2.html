@@ -14,7 +14,7 @@
 
 <nav>
   <ul>
-    <li> <a href="./page1.html">עמוד הבית</a> </li>
+    <li> <a href="./index.html">עמוד הבית</a> </li>
     <li> <a href="./page2.html">אחסון בבית</a> </li>
     <li> <a href="#">אחסון בחוץ</a> </li>
     <li> <a href="#">למה לאחסן?</a> </li>
@@ -40,19 +40,19 @@
 
 
   <ul class=foodslist>
-    <li id="fruits-li"> פירות
+    <li id="fruits-li" onclick="openLiFruit()"> פירות
       <ul class="fruits">
-        <li> <a href="#">אבוקדו</a></li>
-        <li><a href="#">אבטיח</a> </li>
-        <li><a href="#">אפרסק</a></li>
-        <li><a href="section1">בננות</a> </a> </li>
-        <li><a href="#">מנגו</a> </li>
-        <li><a href=#>מלון</a> </li>
-        <li><a href=#>ענבים</a> </li>
-        <li><a href=#>שזיפים</a> </li>
-        <li><a href=#>תותים</a> </li>
-        <li><a href=#>תפוזים</a> </li>
-        <li><a href=#>תפוחים</a> </li>
+        <li><a onclick=" openFruitSlide(0)">בננות</a> </a> </li>
+        <li> <a onclick=" openFruitSlide(1)">אבוקדו</a></li>
+        <li><a onclick=" openFruitSlide(2)">אבטיח</a> </li>
+        <li><a onclick=" openFruitSlide(3)">ענבים</a> </li>
+        <li><a>אפרסק</a></li>
+        <li><a>מנגו</a> </li>
+        <li><a>מלון</a> </li>
+        <li><a>שזיפים</a> </li>
+        <li><a>תותים</a> </li>
+        <li><a>תפוזים</a> </li>
+        <li><a>תפוחים</a> </li>
       </ul>
     </li>
     <li><span>ירקות</span> </li>
@@ -74,12 +74,12 @@
 
   <div id="slidding-window">
     <div id="imgs-bar">
-      <div id="right"> <a>הקודם</a> </div>
+      <div id="right" onclick="right()"> <a>הקודם</a> </div>
       <div class="box"> <a>בננה</a> </div>
       <div class="box"> <a>אבוקדו</a> </div>
       <div class="box"> <a>אבטיח</a> </div>
       <div class="box"> <a>ענבים</a> </div>
-      <div id="left"> <a>הבא</a> </div>
+      <div id="left" onclick="left()"> <a>הבא</a> </div>
       <div id="close-box" onclick="closeSliddingWindow()">
         <span id="close"> לחץ כאן לסגירה </span>
       </div>

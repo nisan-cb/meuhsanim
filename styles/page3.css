@@ -1,10 +1,7 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
 
 @font-face {
-    font-family:'MyWebFont';
+    font-family: 'MyWebFont';
     src: url('../fonts/GveretLevinAlefAlefAlefRegular.ttf');
 
 }
@@ -22,7 +19,7 @@
 body {
     padding: 0 120px;
     direction: rtl;
-   
+
 }
 
 
@@ -43,7 +40,7 @@ nav {
 
 
 nav ul {
-      display: flex;
+    display: flex;
     flex-direction: row;
     list-style: none;
     font-family: 'MyWebFont';
@@ -98,93 +95,88 @@ header {
     /* left: 0; */
     /* transform: translate(0, -50%); */
     /* z-index: 999; */
-        text-align: center;
+    text-align: center;
     background-image: url('../images/trash2.png');
     background-size: 100% 100%;
     background-position: center;
     width: 75%;
     background-repeat: no-repeat;
     height: 500px;
-           margin-top: -2OX;
-           left: 2opx;
+    margin-top: -2OX;
+    left: 2opx;
     color: black;
     position: relative;
     display: flex;
     justify-content: center;
     right: 10x;
-   }
+}
 
 header h1 {
-         font-family: 'MyWebFont';
-        font-size: 60px;
-        text-decoration: underline solid 1px black;
-        display: flex;
-              }
+    font-family: 'MyWebFont';
+    font-size: 60px;
+    text-decoration: underline solid 1px black;
+    display: flex;
+}
 
 div#top {
     font-family: arimo;
     font-size: 30px;
     position: absolute;
     bottom: 40PX;
-       
-           }
 
-b{
-font-size:35px ;
+}
+
+b {
+    font-size: 35px;
 }
 
 
-div#frontsections{
-display: flex;
-margin-top: 10px;
-justify-content:space-between ;
-align-items: center;
-}
-
-section {
-    display: float;
+div#frontsections {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
     align-items: stretch;
+    flex-direction: row;
+    /* overflow-x: hidden; */
+    max-width: 100%;
+    /* height: fit-content; */
+}
+
+div#frontsections section {
+    /* display: float; */
+    /* align-items: stretch; */
+    display: flex;
     justify-content: center;
-}
+    flex-direction: column;
+    text-align: center;
 
-#section1 {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
     border: solid 1px black;
     background-color: yellow;
-    font-size:20px ;
+    width: 100%;
+    flex-grow: 1;
+    /* height: 100%; */
 }
 
-#section2{
-    display: flex;
-    flex-direction: row;
-        border: solid 1PX black;
-        background-color: yellow;
+div#frontsections section img {
+    width: 100%;
+    height: 100%;
 }
 
-#section3{
-    flex: 1;
+#example {
+    width: 100%;
+    height: 50vh;
+    background-color: blueviolet;
     display: flex;
-    flex-direction: row;
-    border: solid 1px black;
-    background-color: yellow;
+    flex-direction: column;
+
+    justify-content: center;
+
+
+    align-items: center;
 }
 
-}  
-
-#section4{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    border: solid 1px black;
-    background-color: yellow;
-}
-
-#section5{
-    flex-direction: row;
-    display: flex;
-    flex: 1;
-    border: solid 1px black;
-    background-color: yellow;
+#box {
+    width: 50%;
+    height: 50%;
+    background-color: brown;
 }
