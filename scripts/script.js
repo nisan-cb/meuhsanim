@@ -1,7 +1,5 @@
 console.log("hello from script")
 
-
-
 let array = [];
 let currentSection = -1;
 
@@ -18,7 +16,7 @@ window.addEventListener('load', () => {
 
 function init() {
     array = document.getElementsByClassName('slide')    // get all html sections
-    const slidesEl = document.getElementsByClassName('box');    // get all fruits slides
+    const slidesboxs = document.getElementsByClassName('box');    // get all fruits slides
     // const sliddingContent = document.getElementById('slide-contant') //
     const fruitsLi = document.getElementById('fruits-li'); // fruits li element
     // const closeSliddingWindow = document.getElementById("close");
@@ -29,14 +27,17 @@ function init() {
 
     fruitsLi.addEventListener('click', () => { // event tha open slidding window
         explainBox.style.display = 'none';
-        sliddingWindowEl.style.display = 'block'
-    });
+        sliddingWindowEl.style.display = 'block';
 
-    for (let i = 0; i < slidesEl.length; i++) {
-        slidesEl[i].addEventListener('click', (e) => {
-            currentSection = i;
+
+    })
+
+    for (let i = 0; i < slidesboxs.length; i++) {
+        slidesboxs [i].addEventListener('click', (e) => {
+            slidesboxs [i].style.color='red';
+           currentSection = i;
             updateSection();
-        });
+          });
     }
 
     left.addEventListener('click', () => {
@@ -46,7 +47,7 @@ function init() {
     right.addEventListener('click', () => {
         currentSection--;
         if (currentSection < 0)
-            currentSection = slidesEl.length - 1;
+            currentSection = slidesboxs.length - 1;
         updateSection();
     })
 
@@ -62,11 +63,11 @@ function init() {
         console.log(array[currentSection]);
 
 
-        for (let j = 0; j < slidesEl.length; j++) {
-            slidesEl[j].classList.remove('clicked');
+        for (let j = 0; j <slidesboxs .length; j++) {
+            slidesboxs [j].classList.remove('clicked');
             array[j].style.display = 'none';
         }
-        slidesEl[currentSection].classList.add('clicked');
+        slidesboxs[currentSection].classList.add('clicked');
         array[currentSection].style.display = 'block';
     }
 

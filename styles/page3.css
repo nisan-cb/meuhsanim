@@ -1,0 +1,190 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+@font-face {
+    font-family:'MyWebFont';
+    src: url('../fonts/GveretLevinAlefAlefAlefRegular.ttf');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Assistant', sans-serif;
+}
+
+
+body {
+    padding: 0 120px;
+    direction: rtl;
+   
+}
+
+
+
+
+nav {
+    padding: 2px 10px;
+    position: relative;
+    /* background-color: blueviolet; */
+    font-family: 'MyWebFont';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25PX;
+}
+
+
+
+
+nav ul {
+      display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'MyWebFont';
+
+}
+
+ul li {
+    margin: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    /* background-color: blue; */
+}
+
+a {
+    text-decoration: none;
+    font-family: mywebfont;
+    color: black;
+}
+
+
+#search-container {
+    /* background-color: #F8D807; */
+    display: flex;
+    max-height: 30px;
+    justify-content: left;
+    margin-left: 0 px;
+}
+
+
+
+
+#search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+#search-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header {
+    /* top: 50%; */
+    /* left: 0; */
+    /* transform: translate(0, -50%); */
+    /* z-index: 999; */
+        text-align: center;
+    background-image: url('../images/trash2.png');
+    background-size: 100% 100%;
+    background-position: center;
+    width: 75%;
+    background-repeat: no-repeat;
+    height: 500px;
+           margin-top: -2OX;
+           left: 2opx;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 10x;
+   }
+
+header h1 {
+         font-family: 'MyWebFont';
+        font-size: 60px;
+        text-decoration: underline solid 1px black;
+        display: flex;
+              }
+
+div#top {
+    font-family: arimo;
+    font-size: 30px;
+    position: absolute;
+    bottom: 40PX;
+       
+           }
+
+b{
+font-size:35px ;
+}
+
+
+div#frontsections{
+display: flex;
+margin-top: 10px;
+justify-content:space-between ;
+align-items: center;
+}
+
+section {
+    display: float;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size:20px ;
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+        border: solid 1PX black;
+        background-color: yellow;
+}
+
+#section3{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    background-color: yellow;
+}
+
+}  
+
+#section4{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    background-color: yellow;
+}
+
+#section5{
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+    border: solid 1px black;
+    background-color: yellow;
+}
