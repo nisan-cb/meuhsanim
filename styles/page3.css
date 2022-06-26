@@ -17,8 +17,13 @@
 
 
 body {
-    padding: 0 120px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
     direction: rtl;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -92,73 +97,60 @@ a {
 
 header {
     flex-direction: column;
-       text-align: center;
-        width: 45%;
-        height: 300px;
-    margin-top: 45px;
+    text-align: center;
+    /* width: 45%; */
+    height: fit-content;
+    /* margin-top: 45px; */
     color: black;
     position: relative;
     display: flex;
     justify-content: space-between;
-        right: 30%;
     align-items: center;
-    }
+}
 
-    
+
 
 header h1 {
     font-family: 'MyWebFont';
     font-size: 60px;
     text-decoration: underline solid 1px black;
-    position: absolute;
-    top: -35px ;
-    }
+}
 
 
 
-    #top{
-   display:flex ;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   font-family: arimo;
-   font-size: 20px;
-   position: absolute;
-   bottom:-320PX;
-   top: 0px;
-   right: 150px;
-   margin-bottom:50px;
-     
-             
-    }
-#subtitle{
-    position: absolute;
-    top: 150px ;
-    left : 450px ;
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: arimo;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#subtitle {
     width: 200px;
 }
 
-#top #imgtop {
-height: 10px;
-position: relative;
-bottom:300px;
+#top #imgtop img {
+    max-height: 400px;
 }
 
 
- #top p b{
+#top p b {
     font-size: 25px;
 }
 
 h2 {
-   position: relative;
-   right: 25%;
-   bottom: -150px;
+    position: relative;
+    display: block;
+    text-align: center;
 }
 
-   h2  b{
+h2 b {
     font-family: MyWebFont;
     font-size: 40px;
-    }
+}
 
 
 
@@ -167,17 +159,15 @@ div#frontsections {
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
-    align-items: stretch;
+    /* align-items: stretch; */
     flex-direction: row;
     justify-content: center;
-    /* overflow-x: hidden; */
-        /* height: fit-content; */
     margin-top: 70px;
-    height:400px ;
+    /* height: 400px; */
     width: 100%;
-    flex-grow: 1;
-    top: 100px;
-           }
+    /* flex-grow: 1; */
+    /* top: 100px; */
+}
 
 div#frontsections section {
     /* display: float; */
@@ -185,52 +175,59 @@ div#frontsections section {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-image: url('../images/box7.png');
     background-size: 100% 100%;
     width: 600px;
-      /* height: 100%; */
-      position: relative;
+    /* border: 1px solid black; */
+
+    height: 200px;
+    position: relative;
+    /* display: none; */
 }
 
 div#frontsections section img {
     width: 100px;
     height: 100px;
-        border-radius: 50%;
- position: absolute;
- top:240px;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 240px; */
+    bottom: 10px;
 }
 
-h3,h4,h5,h6,h7 
-{
-font-family:MyWebFont ;
-font-size: 30px;
-position: absolute;
-top: 160px;
+h3 {
+    font-family: MyWebFont;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
 
 }
 
+div#backsections {
+    width: fit-content;
+    margin: 0 auto;
+}
 
 div#backsections section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     text-align: center;
+    text-align: center;
     background-image: url('../images/box7.png');
     background-size: 100% 100%;
-        /* height: 100%; */
-      position: relative;
-      height: 600px;
-      width: 600px;
-      font-size: 30px;
-    }
+    /* height: 100%; */
+    position: relative;
+    height: 600px;
+    width: 600px;
+    font-size: 30px;
+}
 
-div#backsections section .text
-{
-position: absolute;
-height:  200px;
-width: 500px;
+div#backsections section .text {
+    position: absolute;
+    height: 200px;
+    width: 500px;
 }
 
 #example {
