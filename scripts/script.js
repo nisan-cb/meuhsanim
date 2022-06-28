@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
 });
 
 
+
 function updateSection() {
     const slideTitle = document.getElementById('slide-title'); // update title to current section
     slideTitle.innerHTML = "";

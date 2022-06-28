@@ -240,6 +240,32 @@ section {
 #explain-box img {
     margin-top: 50px;
     margin-bottom: 10px;
+    transition: all 1s;
+    animation: moveSitdeToSide 4s linear infinite normal;
+}
+
+
+
+@keyframes moveSitdeToSide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* sliding window  style*/
@@ -417,6 +443,7 @@ section img {
     position: flex;
     justify-content: start;
 }
+
 
 .fruits li a {
     color: white;
