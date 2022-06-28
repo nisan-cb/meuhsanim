@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
     <title> צור קשר</title>
 </head>
 
@@ -16,26 +17,27 @@
     </div>
     <div class="row">
         <img src="/images/contactus.png">
-        <form action="/action_page.php">
+        <form id="myForm" onsubmit="validateForm(event)">
+            <span id="error-msg"></span>
             <div>
                 <label for="fname">שם</label>
-                <input id="fname" type="text" name="שם פרטי" placeholder="הזן את שמך הפרטי.." required>
+                <input id="fname" type="text" name="שם פרטי" placeholder="הזן את שמך הפרטי..">
             </div>
             <div>
                 <label for="lname">שם משפחה</label>
-                <input id="lname" type="text" name="שם משפחה" placeholder="הזן שם משפחה.." required>
+                <input id="lname" type="text" name="שם משפחה" placeholder="הזן שם משפחה..">
             </div>
             <div>
                 <label for="fhone">טלפון</label>
-                <input id="fhone" type="text" name="טלפון" placeholder="הזן את מספר הטלפון.." required>
+                <input id="fhone" type="text" name="טלפון" placeholder="הזן את מספר הטלפון..">
             </div>
             <div>
                 <label for="mail">כתובת מייל </label>
-                <input id="mail" type="text" name="טלפון" placeholder="הזן את כתובת המייל שלך.." required>
+                <input id="mail" type="text" name="טלפון" placeholder="הזן את כתובת המייל שלך..">
             </div>
             <div>
                 <label for="subject">נושא הפנייה</label>
-                <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." style="height:170px" required></textarea>
+                <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." style="height:170px"></textarea>
             </div>
 
             <input type="submit" value="שלח">
