@@ -151,14 +151,12 @@ h2 {
 
 h2 b {
     font-family: MyWebFont;
-    font-size: 100px;
+    font-size: 40px;
 }
 
-div.text b {
-    font-size: 33px;
-}
 
-div#frontsections {
+
+#frontsections {
     position: relative;
     display: flex;
     margin-top: 10px;
@@ -173,9 +171,11 @@ div#frontsections {
     /* top: 100px; */
     background-image: url('../images/SHELF.png');
     background-size: cover;
+    margin-bottom: 600px;
+    position: relative;
 }
 
-div#frontsections section {
+#frontsections>div {
     /* display: float; */
     /* align-items: stretch; */
     display: flex;
@@ -185,21 +185,20 @@ div#frontsections section {
     text-align: center;
     background-image: url('../images/box7.png');
     background-size: 100% 100%;
-    width: 600px;
-    /* border: 1px solid black; */
-    height: 250px;
-    position: relative;
-    /* display: none; */
-    color: black;
+    /* width: 600px; */
+    flex-grow: 1;
+    height: 300px;
+    /* position: relative; */
+    cursor: pointer;
 }
 
-div#frontsections section img {
+#frontsections div img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     position: absolute;
     /* top: 240px; */
-    bottom: 25px;
+    bottom: 50px;
 }
 
 h3 {
@@ -207,15 +206,22 @@ h3 {
     font-size: 30px;
     position: absolute;
     top: 10px;
-
 }
 
-div#backsections {
-    width: fit-content;
+.front section {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 100%);
+    /* background-color: red; */
+    /* width: 100vw; */
+    width: 100%;
     margin: 0 auto;
+
 }
 
-div#backsections section {
+.back {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,10 +234,38 @@ div#backsections section {
     height: 600px;
     width: 600px;
     font-size: 30px;
+    /* background-color: blueviolet; */
+    margin: 0 auto;
 }
 
-div#backsections section .text {
+#frontsections>div:hover section {
+    display: block;
+}
+
+
+
+
+.back .text {
     position: absolute;
     height: 200px;
     width: 500px;
+}
+
+#example {
+    width: 100%;
+    height: 50vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+
+    align-items: center;
+}
+
+#box {
+    width: 50%;
+    height: 50%;
+    background-color: brown;
 }
