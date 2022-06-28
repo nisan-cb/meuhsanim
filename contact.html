@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title> צור קשר</title>
+</head>
+
+<div class="container">
+    <div id="title">
+        <h1>צרו איתנו קשר</h1>
+        <p>יש לכם הערות/בקשות/שאלות? מוזמנים לשלוח לנו הודעה ונחזור אליכם בהקדם</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="/images/contactus.png">
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">שם
+                    <input type="text" name="שם פרטי" placeholder="הזן את שמך הפרטי.." required>
+                </label>
+                <label for="lname">שם משפחה
+                    <input type="text" name="שם משפחה" placeholder="הזן שם משפחה.." required>
+                </label>
+                <label for="fhone">טלפון
+                    <input type="text" name="טלפון" placeholder="הזן את מספר הטלפון.." required>
+                </label>
+                <label for="mail">כתובת מייל
+                    <input type="text" name="טלפון" placeholder="הזן את כתובת המייל שלך.." required>
+                </label>
+                <label for="subject">נושא הפנייה
+                    <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." style="height:170px"
+                        required></textarea>
+                </label>
+                <input type="submit" value="שלח">
+            </form>
+        </div>
+    </div>
+</div>
