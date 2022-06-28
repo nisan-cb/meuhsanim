@@ -184,6 +184,9 @@ ul li:hover ul {
 }
 
 
+
+
+
 /* sections style */
 section {
     display: none;
@@ -264,13 +267,13 @@ section {
 
 #imgs-bar {
     width: 100%;
-    height: 70px;
+    height: 150px;
     background-image: url('../images/fruits.jpg');
     background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0;
+    padding-top: 2px;
     margin-top: 0px;
     border: 1px solid black;
 }
@@ -292,9 +295,11 @@ section {
     justify-content: center;
 }
 
-#imgs-bar a {
-    font-family: MyWebFont;
-    font-size: 30px;
+
+
+#imgs-bar a img {
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
 }
 
@@ -331,13 +336,16 @@ div #close {
 #slidding-window #left,
 #slidding-window #right {
     background-color: white;
-    width: 70px;
+    width: 80px;
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
     cursor: pointer;
     border-style: 10PX dotted;
     display: flex;
     background-color: black;
     align-items: center;
+    justify-content: center;
+
+
 }
 
 #slidding-window #right {
@@ -348,13 +356,13 @@ div #close {
 #slidding-window #right a {
     color: white;
     font-family: arimo;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #slidding-window #left a {
     color: white;
     font-family: arimo;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #imgs-bar.box :hover {
