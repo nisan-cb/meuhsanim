@@ -15,29 +15,30 @@
         <p>יש לכם הערות/בקשות/שאלות? מוזמנים לשלוח לנו הודעה ונחזור אליכם בהקדם</p>
     </div>
     <div class="row">
-        <div class="column">
-            <img src="/images/contactus.png">
-        </div>
-        <div class="column">
-            <form action="/action_page.php">
-                <label for="fname">שם
-                    <input type="text" name="שם פרטי" placeholder="הזן את שמך הפרטי.." required>
-                </label>
-                <label for="lname">שם משפחה
-                    <input type="text" name="שם משפחה" placeholder="הזן שם משפחה.." required>
-                </label>
-                <label for="fhone">טלפון
-                    <input type="text" name="טלפון" placeholder="הזן את מספר הטלפון.." required>
-                </label>
-                <label for="mail">כתובת מייל
-                    <input type="text" name="טלפון" placeholder="הזן את כתובת המייל שלך.." required>
-                </label>
-                <label for="subject">נושא הפנייה
-                    <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." style="height:170px"
-                        required></textarea>
-                </label>
-                <input type="submit" value="שלח">
-            </form>
-        </div>
+        <img src="/images/contactus.png">
+        <form action="/action_page.php">
+            <div>
+                <label for="fname">שם</label>
+                <input id="fname" type="text" name="שם פרטי" placeholder="הזן את שמך הפרטי.." required>
+            </div>
+            <div>
+                <label for="lname">שם משפחה</label>
+                <input id="lname" type="text" name="שם משפחה" placeholder="הזן שם משפחה.." required>
+            </div>
+            <div>
+                <label for="fhone">טלפון</label>
+                <input id="fhone" type="text" name="טלפון" placeholder="הזן את מספר הטלפון.." required>
+            </div>
+            <div>
+                <label for="mail">כתובת מייל </label>
+                <input id="mail" type="text" name="טלפון" placeholder="הזן את כתובת המייל שלך.." required>
+            </div>
+            <div>
+                <label for="subject">נושא הפנייה</label>
+                <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." style="height:170px" required></textarea>
+            </div>
+
+            <input type="submit" value="שלח">
+        </form>
     </div>
 </div>
