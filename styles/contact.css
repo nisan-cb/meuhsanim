@@ -36,9 +36,3 @@ form div {
     flex-direction: column;
     margin-bottom: 10px;
 }
-
-form div label {
-    /* background-color: brown; */
-}
-
-form div input {}
