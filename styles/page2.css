@@ -86,10 +86,10 @@ a {
 
 header {
     text-align: center;
-    background-image: url('../images/backgground2.jpg');
+    background-image: url('../images/kitchen2.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 300px;
+    height: 500px;
     margin-bottom: 00px;
     position: relative;
 
@@ -100,9 +100,8 @@ header h1 {
     font-family: 'MyWebFont';
     font-size: 90px;
     color: brown;
-    margin-top: 10px;
+    margin-top: 25px;
     position: absolute;
-    margin-top: 55PX;
 
 
 }
@@ -207,11 +206,10 @@ section {
     height: fit-content;
     flex-direction: column;
     background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     /* height: calc(100% + 300px); */
     position: relative;
     height: 350px;
+    margin-top: 0px;
 
 }
 
@@ -225,17 +223,15 @@ section {
 
 #explain-box p {
     border-top: 1px solid black;
-    padding: 7px;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     color: brown;
     font-size: 40px;
     font-family: 'MyWebFont';
 }
 
 #explain-box img {
-    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -392,15 +388,20 @@ section h1 p {
 }
 
 /* section h2, */
+section h2,
 section h3,
 section h4,
 section h5,
 section h6 {
-    /* text-decoration: underline; */
-    /* text-decoration: overline; */
     width: 100%;
-    font-size: 20px;
     border-top: 1px solid black;
+    font-size: 30px;
+}
+
+section p,
+section li,
+section ul {
+    font-size: 25px;
 }
 
 section img {
