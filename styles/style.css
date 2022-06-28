@@ -105,7 +105,8 @@ header {
     background-image: url('../images/BOX3.png');
     background-size: 100% 100%;
     background-position: center;
-    width: 100%;
+    width: 1300PX;
+    margin: 0 auto;
     background-repeat: no-repeat;
     height: fit-content;
     margin-bottom: 00px;
@@ -128,7 +129,7 @@ h1 p {
 
 #p1 {
     font-size: 60px;
-    color: #744D3C;
+    color: brown;
 }
 
 
@@ -140,14 +141,14 @@ h1 p {
 
 
 .title {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    text-decoration: underline;
     font-family: MyWebFont;
-    width: 50%;
-    border-bottom: 1px solid black;
+    width: 70%;
+    border-bottom: 2px solid #BA8E55;
     padding-bottom: 3px;
-
+    color: brown;
+    text-decoration: underline;
 }
 
 header div p {
@@ -160,43 +161,76 @@ header div p {
 } */
 
 .btn {
-    /* margin: 60px 0px; */
-    font-size: 20px;
+    font-size: 40px;
     padding: 5px 8px;
     border: 2px solid black;
-    background-color: white;
+    background-color: yellow;
     cursor: pointer;
     font-family: MyWebFont;
-
+    margin-top: 0PX;
 }
 
-a button.btn {
-    color: black;
+
+.btn:hover {
+    background-color: red;
 }
+
 
 section {
     min-height: 200px;
     padding-right: 18px;
     padding-left: 18px;
-    padding-top: 20px;
     padding-bottom: 20px;
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 0PX;
+}
+
+#section1,
+#section2,
+#section3 {
+    background-size: 100% 100%;
+    background-image: url('../images/drawer.png');
+}
+
+
+
+
+.drawer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 8px 4px rgba(125, 125, 125, 0.625);
+    border-radius: 25px;
+    width: 1200px;
+    padding: 30px 30px;
+    margin-bottom: 12px;
+    height: 70%;
+}
+
+
+#section1 img {
+    margin-top: 10px;
+
 }
 
 section img {
-    width: 50%;
-    height: 350px;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 8px 4px rgba(125, 125, 125, 0.625);
+    border-radius: 25px;
     /* height: 100px; */
+    margin-top: 5px;
+
 }
 
-section {
-    position: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* width: 450px; */
-    /* height: 300px; */
-    /* margin-left: 10px; */
+#sectu #text {
+    width: 500px;
 }
 
 /* #section3 img {
@@ -208,78 +242,56 @@ section p {
     /* margin: 10px 0; */
     margin-top: 10px;
     font-family: arimo;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
-
-#section1 {
-    background-color: rgb(248, 206, 213);
-
-}
 
 
 section button {
     margin: 20px 0;
 }
 
-#section2 {
-    background-color: #F8D807;
-}
-
-#section3 {
-    background-color: aqua;
-    position: relative;
-}
-
 
 footer {
-    min-height: 200px;
-    background-image: src="./images/WOOD.png";
+    background-image: url('../images/FOOTER.png');
+    width: 1300px;
+    background-size: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 30px 20px;
+    margin: 0 auto;
+    margin-top: 0PX;
+
 }
 
 h5 {
     color: right;
     font-family: MyWebFont;
     color: white;
-    margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h6 {
     color: right;
     font-family: MyWebFont;
     color: white;
-    margin-top: -12px;
-    margin-bottom: 10px;
     font-size: 16px;
 }
-
-
-
-footer {
-    background-image: url('../images/WOOD.png');
-    background-size: cover;
-}
-
 
 
 footer a {
     color: white;
     font-family: arimo;
+    font-size: 25px;
 }
 
 
-
-
-#box {
-    color: white;
-    Font-family: Assistant;
+footer a:hover {
+    color: red;
 }
+
 
 footer .box {
     width: 50%;
@@ -287,35 +299,8 @@ footer .box {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid black; */
 }
 
-
-
-footer .box:nth-child(1) {
-    /* justify-content: start; */
-    align-items: flex-start;
-}
-
-footer .box:nth-child(1) a {
-    margin-top: 7px;
-}
-
-footer .box:nth-child(2) {
-    text-align: center;
-}
-
-footer .box:nth-child(2) img {
-    width: 40px;
-    margin-top: 10px;
-
-}
-
-h7 {
-    font-family: MyWebFont;
-    color: white;
-    font-size: 20px;
-}
 
 #imgfooter {
     height: 80px;

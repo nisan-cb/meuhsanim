@@ -25,7 +25,7 @@ body {
 
 
 nav {
-    padding: 2px 10px;
+    padding: 2px 0;
     position: relative;
     /* background-color: blueviolet; */
     font-family: 'MyWebFont';
@@ -86,10 +86,10 @@ a {
 
 header {
     text-align: center;
-    background-image: url('../images/backgground2.jpg');
+    background-image: url('../images/kitchen2.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 300px;
+    height: 400px;
     margin-bottom: 00px;
     position: relative;
 
@@ -100,11 +100,8 @@ header h1 {
     font-family: 'MyWebFont';
     font-size: 90px;
     color: brown;
-    margin-top: 10px;
+    margin-top: 2px;
     position: absolute;
-    margin-top: 55PX;
-
-
 }
 
 /*main style  */
@@ -186,9 +183,6 @@ ul li:hover ul {
 
 
 
-
-
-/* sections style */
 section {
     display: none;
 }
@@ -229,7 +223,7 @@ section {
 #explain-box p {
     border-top: 1px solid black;
     padding: 7px;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 50px;
     color: brown;
@@ -297,16 +291,28 @@ section {
 
 #imgs-bar {
     width: 100%;
-    height: 150px;
-    background-image: url('../images/fruits.jpg');
+    height: 200px;
+    background-color: aqua;
     background-size: cover;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     padding-top: 2px;
     margin-top: 0px;
     border: 1px solid black;
 }
+
+div#boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#boxs p {
+    font-size: 20px;
+}
+
 
 #imgs-bar .box {
     border: 1px solid black;
@@ -399,22 +405,6 @@ div #close {
     background-color: yellow;
 }
 
-/* #section1 img {
-    width: 100%;
-}
-
-#section2 img {
-    width: 100%;
-} */
-
-/* section h1 {
-    size: 20px;
-    font-family: 'MyWebFont';
-    background-color: yellow;
-    border: solid black 1px;
-    position: flex;
-    justify-content: center;
-} */
 
 h1 span {
     background-color: red;
@@ -425,17 +415,26 @@ section h1 p {
     margin-right: 45%;
 }
 
-/* section h2, */
+
 section h3,
 section h4,
 section h5,
 section h6 {
-    /* text-decoration: underline; */
-    /* text-decoration: overline; */
+
     width: 100%;
     font-size: 20px;
     border-top: 1px solid black;
 }
+
+section p {
+    font-size: 25px;
+}
+
+
+section li {
+    font-size: 20px;
+}
+
 
 section img {
     width: 40%;
@@ -449,7 +448,13 @@ section img {
     color: white;
 }
 
-/* .clicked {
-    background-color: red !important;
-    border: 1px solid yellow ;
-} */
+.title {
+    font-size: 25px;
+
+}
+
+
+div#imgs-bar P {
+    font-family: arimo;
+    font-size: 40px;
+}
