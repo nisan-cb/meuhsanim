@@ -311,20 +311,21 @@ footer .box {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid black; */
 }
 
 
-
-footer .box:nth-child(1) {
-    /* justify-content: start; */
-    align-items: flex-start;
-    margin-right: 200px;
-}
 
 footer .box:nth-child(1) a {
     margin-top: 7px;
+    align-items: flex-start;
+    margin-right: 200px;
+    font-size: 25px;
 }
+
+footer a :hover {
+    color: red;
+}
+
 
 footer .box:nth-child(2) {
     text-align: center;
