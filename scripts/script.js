@@ -71,7 +71,6 @@ function right() {
 }
 
 function left() {
-    // currentSection = (currentSection + 1) % 4;
     currentSection++;
     if (currentSection > array.length - 1)
         currentSection = 0
