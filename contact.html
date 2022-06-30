@@ -17,31 +17,42 @@
         <p>יש לכם הערות/בקשות/שאלות? מוזמנים לשלוח לנו הודעה ונחזור אליכם בהקדם</p>
     </div>
     <div class="row">
-        <img src="/images/contactus.png">
         <form id="myForm" onsubmit="validateForm(event)">
             <span id="error-msg"></span>
             <div>
-                <label for="fname">שם</label>
+                <label for="fname">
+                    <p>שם </p>
+                </label>
                 <input id="fname" type="text" name="שם פרטי" placeholder="הזן את שמך הפרטי.." required>
             </div>
             <div>
-                <label for="lname">שם משפחה</label>
+                <label for="lname">
+                    <p> שם משפחה </p>
+                </label>
                 <input id="lname" type="text" name="שם משפחה" placeholder="הזן שם משפחה.." required>
             </div>
             <div>
-                <label for="fhone">טלפון</label>
+                <label for="fhone">
+                    <p> טלפון </p>
+                </label>
                 <input id="fhone" type="text" name="טלפון" placeholder="הזן את מספר הטלפון.." required>
             </div>
             <div>
-                <label for="mail">כתובת מייל </label>
+                <label for="mail">
+                    <p>כתובת מייל </p>
+                </label>
                 <input id="mail" type="email" name="טלפון" placeholder="הזן את כתובת המייל שלך.." required>
             </div>
             <div>
-                <label for="subject">נושא הפנייה</label>
-                <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." style="height:170px"></textarea>
+                <label for="subject">
+                    <p>נושא הפניה </p>
+                </label>
+                <textarea id="subject" name="פנייה" placeholder="כתוב לנו.." required></textarea>
             </div>
-
-            <input type="submit" value="שלח">
+            <input id="button" type="submit" value="שלח">
         </form>
+        <div id="img">
+            <img src="/images/contactus.png">
+        </div>
     </div>
 </div>
